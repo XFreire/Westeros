@@ -70,7 +70,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         // Asignamos el RootVC
-        window?.rootViewController = splitViewController
+        let housesVC = HouseCollectionViewController(houses: houses)
+        window?.rootViewController = housesVC
         return true
     }
 }

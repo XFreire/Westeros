@@ -40,6 +40,10 @@
 		4BD79A862025C096002531D3 /* EpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD79A842025C096002531D3 /* EpisodeDetailViewController.swift */; };
 		4BD79A872025C096002531D3 /* EpisodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD79A852025C096002531D3 /* EpisodeDetailViewController.xib */; };
 		4BE7040F2020F8F700178E68 /* HouseName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE7040E2020F8F700178E68 /* HouseName.swift */; };
+		4BE8A14D214E5CC600540372 /* HouseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8A14B214E5CC600540372 /* HouseCollectionViewController.swift */; };
+		4BE8A14E214E5CC600540372 /* HouseCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BE8A14C214E5CC600540372 /* HouseCollectionViewController.xib */; };
+		4BE8A151214E63CE00540372 /* HouseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8A14F214E63CE00540372 /* HouseCollectionViewCell.swift */; };
+		4BE8A152214E63CE00540372 /* HouseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BE8A150214E63CE00540372 /* HouseCollectionViewCell.xib */; };
 		F73EDEAF1FF665B8002B25AF /* targaryenSmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F73EDEAC1FF665B8002B25AF /* targaryenSmall.jpg */; };
 		F73EDEB01FF665B8002B25AF /* lannister.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F73EDEAD1FF665B8002B25AF /* lannister.jpg */; };
 		F73EDEB11FF665B8002B25AF /* codeIsComing.png in Resources */ = {isa = PBXBuildFile; fileRef = F73EDEAE1FF665B8002B25AF /* codeIsComing.png */; };
@@ -95,6 +99,10 @@
 		4BD79A842025C096002531D3 /* EpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailViewController.swift; sourceTree = "<group>"; };
 		4BD79A852025C096002531D3 /* EpisodeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeDetailViewController.xib; sourceTree = "<group>"; };
 		4BE7040E2020F8F700178E68 /* HouseName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseName.swift; sourceTree = "<group>"; };
+		4BE8A14B214E5CC600540372 /* HouseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseCollectionViewController.swift; sourceTree = "<group>"; };
+		4BE8A14C214E5CC600540372 /* HouseCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseCollectionViewController.xib; sourceTree = "<group>"; };
+		4BE8A14F214E63CE00540372 /* HouseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseCollectionViewCell.swift; sourceTree = "<group>"; };
+		4BE8A150214E63CE00540372 /* HouseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseCollectionViewCell.xib; sourceTree = "<group>"; };
 		F73EDEAC1FF665B8002B25AF /* targaryenSmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = targaryenSmall.jpg; sourceTree = "<group>"; };
 		F73EDEAD1FF665B8002B25AF /* lannister.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lannister.jpg; sourceTree = "<group>"; };
 		F73EDEAE1FF665B8002B25AF /* codeIsComing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codeIsComing.png; sourceTree = "<group>"; };
@@ -195,6 +203,17 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		4BE8A146214E589D00540372 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				4BE8A14B214E5CC600540372 /* HouseCollectionViewController.swift */,
+				4BE8A14C214E5CC600540372 /* HouseCollectionViewController.xib */,
+				4BE8A14F214E63CE00540372 /* HouseCollectionViewCell.swift */,
+				4BE8A150214E63CE00540372 /* HouseCollectionViewCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		F73EDEB21FF665E7002B25AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +229,7 @@
 		F73EDEB71FF66632002B25AF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4BE8A146214E589D00540372 /* CollectionView */,
 				4BAF736B1FF91EA5000B9587 /* HouseListViewController.swift */,
 				4BAF736C1FF91EA5000B9587 /* HouseListViewController.xib */,
 				F73EDEB31FF6662B002B25AF /* HouseDetailViewController.swift */,
@@ -324,6 +344,7 @@
 				4B7F243A1FF105AB00EB3D94 /* LaunchScreen.storyboard in Resources */,
 				4BAF73721FF92A90000B9587 /* MemberListViewController.xib in Resources */,
 				4BD79A6D202394DA002531D3 /* MemberDetailViewController.xib in Resources */,
+				4BE8A152214E63CE00540372 /* HouseCollectionViewCell.xib in Resources */,
 				4BA09AB720175638003B4701 /* characters.json in Resources */,
 				F73EDEAF1FF665B8002B25AF /* targaryenSmall.jpg in Resources */,
 				4BD79A792024DB39002531D3 /* SeasonListViewController.xib in Resources */,
@@ -331,6 +352,7 @@
 				4BD79A872025C096002531D3 /* EpisodeDetailViewController.xib in Resources */,
 				F73EDEB11FF665B8002B25AF /* codeIsComing.png in Resources */,
 				4BD79A832025BFB7002531D3 /* EpisodeListViewController.xib in Resources */,
+				4BE8A14E214E5CC600540372 /* HouseCollectionViewController.xib in Resources */,
 				4B7F24371FF105AB00EB3D94 /* Assets.xcassets in Resources */,
 				F73EDEB61FF6662B002B25AF /* HouseDetailViewController.xib in Resources */,
 			);
@@ -355,6 +377,7 @@
 				4B7F24521FF10D6C00EB3D94 /* House.swift in Sources */,
 				4B7F24301FF105AB00EB3D94 /* AppDelegate.swift in Sources */,
 				4BD79A6F20239B45002531D3 /* Season.swift in Sources */,
+				4BE8A151214E63CE00540372 /* HouseCollectionViewCell.swift in Sources */,
 				4BD79A862025C096002531D3 /* EpisodeDetailViewController.swift in Sources */,
 				4BD79A782024DB39002531D3 /* SeasonListViewController.swift in Sources */,
 				4BAF736D1FF91EA5000B9587 /* HouseListViewController.swift in Sources */,
@@ -363,6 +386,7 @@
 				4BD79A7120239C04002531D3 /* Episode.swift in Sources */,
 				4BD79A6C202394DA002531D3 /* MemberDetailViewController.swift in Sources */,
 				F73EDEB51FF6662B002B25AF /* HouseDetailViewController.swift in Sources */,
+				4BE8A14D214E5CC600540372 /* HouseCollectionViewController.swift in Sources */,
 				4BAF73661FF8E3DC000B9587 /* Repository.swift in Sources */,
 				4BAF73691FF909D2000B9587 /* WikiViewController.swift in Sources */,
 				4BD79A822025BFB7002531D3 /* EpisodeListViewController.swift in Sources */,
