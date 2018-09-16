@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var houseDetailNavigation: UINavigationController!
     var seasonDetailNavigation: UINavigationController!
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // Crear Window
         window = UIWindow(frame: UIScreen.main.bounds)
