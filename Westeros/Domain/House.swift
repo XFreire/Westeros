@@ -84,8 +84,8 @@ extension House: Equatable {
 }
 // MARK: - Hashable
 extension House: Hashable {
-    var hashValue: Int {
-        return proxyForEquality.hashValue
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(proxyForEquality)
     }
 }
 

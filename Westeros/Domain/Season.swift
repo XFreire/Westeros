@@ -71,8 +71,8 @@ extension Season: Equatable {
 }
 // MARK: - Hashable
 extension Season: Hashable {
-    var hashValue: Int {
-        return proxyForEquality.hashValue
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(proxyForEquality)
     }
 }
 

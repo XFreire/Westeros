@@ -56,8 +56,8 @@ extension Episode: Equatable {
 }
 // MARK: - Hashable
 extension Episode: Hashable {
-    var hashValue: Int {
-        return proxyForEquality.hashValue
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(proxyForEquality)
     }
 }
 
